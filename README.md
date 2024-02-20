@@ -10,5 +10,6 @@ To use the provided Docker image, follow these steps:
 
 1. **Pull the Docker Image**: Use the following command to pull the Docker image from the Docker Hub repository:
    
-   ```bash
-   docker pull your_username/gradle8-java17
+```bash
+    docker pull riyadrb/java17-gradle
+    
