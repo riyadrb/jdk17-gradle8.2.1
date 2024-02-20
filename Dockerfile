@@ -13,10 +13,9 @@ RUN apt-get update && \
     unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip && \
     rm gradle-${GRADLE_VERSION}-bin.zip
 
-# Verify installation
+# Verify installation by path
 RUN ${GRADLE_HOME}/gradle-${GRADLE_VERSION}/bin/gradle --version
 
-# Clean up
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
